@@ -24,7 +24,7 @@ public class appTaxi extends baseFare{
             percentage += 0.1;
         if (this.transit == "Good")
             percentage -=0.1;
-        else if (this.transit == "Ruim")
+        else if (this.transit == "Bad")
             percentage += 0.1;
         return super.calcFare() * percentage;
     }
